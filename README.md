@@ -1,3 +1,3 @@
 # data-gen
 
-# research data generation scripts
+This repository contains data generation scripts which is used for clustering purposes
