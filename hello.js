@@ -75,6 +75,33 @@ for (let i = 0; i < 300; i++) {
     data.push(row);
 }
 
+// generating Loyal Customer values
+for (let i = 0; i < 150; i++) {
+    const row = [];
+    for (let j = 1; j < 6; j++) {
+        switch (j) {
+            case 1:
+                row.push(generateNoValues());
+                break;
+            case 2:
+                row.push(generateYesValues());
+                break;
+            case 3:
+                row.push(generateYesValues());
+                break;
+            case 4:
+                row.push(generateYesValues());
+                break;
+            case 5:
+                row.push(generateShortValues());
+                break;
+            default:
+                console.log('Loop Error - generating Loyal Customer values');
+        }
+    }
+    data.push(row);
+}
+
 
 const filename = 'data.csv';
 
