@@ -43,7 +43,33 @@ for (let i = 0; i < 250; i++) {
                 row.push(generateShortValues());
                 break;
             default:
-                console.log('Loop Error');
+                console.log('Loop Error - generating Impulsive Buyer values');
+        }
+    }
+    data.push(row);
+}
+// generating Browsing Customer values
+for (let i = 0; i < 300; i++) {
+    const row = [];
+    for (let j = 1; j < 6; j++) {
+        switch (j) {
+            case 1:
+                row.push(generateNoValues());
+                break;
+            case 2:
+                row.push(generateYesValues());
+                break;
+            case 3:
+                row.push(generateYesValues());
+                break;
+            case 4:
+                row.push(generateYesValues());
+                break;
+            case 5:
+                row.push(generateVeryLongValues());
+                break;
+            default:
+                console.log('Loop Error - generating Browsing Customer values');
         }
     }
     data.push(row);
