@@ -102,6 +102,33 @@ for (let i = 0; i < 150; i++) {
     data.push(row);
 }
 
+// generating Bargain Hunter values
+for (let i = 0; i < 300; i++) {
+    const row = [];
+    for (let j = 1; j < 6; j++) {
+        switch (j) {
+            case 1:
+                row.push(generateYesValues());
+                break;
+            case 2:
+                row.push(generateYesValues());
+                break;
+            case 3:
+                row.push(generateNoValues());
+                break;
+            case 4:
+                row.push(generateYesValues());
+                break;
+            case 5:
+                row.push(generateLongValues());
+                break;
+            default:
+                console.log('Loop Error - generating Bargain Hunter values');
+        }
+    }
+    data.push(row);
+}
+
 
 const filename = 'data.csv';
 
