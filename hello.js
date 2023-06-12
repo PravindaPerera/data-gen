@@ -54,7 +54,7 @@ for (let i = 0; i < 300; i++) {
     for (let j = 1; j < 6; j++) {
         switch (j) {
             case 1:
-                row.push(generateNoValues());
+                row.push(generateYesValues());
                 break;
             case 2:
                 row.push(generateYesValues());
