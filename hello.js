@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+console.log('Start...');
 function generateYesValues() {
     return Math.floor(Math.random() * (100 - 80 + 1)) + 80;
 }
@@ -13,11 +14,11 @@ function generateShortValues() {
 }
 
 function generateLongValues() {
-    return Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+    return Math.floor(Math.random() * (6 - 12 + 1)) + 10;
 }
 
 function generateVeryLongValues() {
-    return Math.floor(Math.random() * (60 - 30 + 1)) + 20;
+    return Math.floor(Math.random() * (13 - 20 + 1)) + 20;
 }
 
 
@@ -49,7 +50,7 @@ for (let i = 0; i < 266; i++) {
     data.push(row);
 }
 // generating Browsing Customer values
-for (let i = 0; i < 332; i++) {
+for (let i = 0; i < 331; i++) {
     const row = [];
     for (let j = 1; j < 6; j++) {
         switch (j) {
@@ -76,7 +77,7 @@ for (let i = 0; i < 332; i++) {
 }
 
 // generating Loyal Customer values
-for (let i = 0; i < 141; i++) {
+for (let i = 0; i < 179; i++) {
     const row = [];
     for (let j = 1; j < 6; j++) {
         switch (j) {
@@ -103,7 +104,7 @@ for (let i = 0; i < 141; i++) {
 }
 
 // generating Bargain Hunter values
-for (let i = 0; i < 287; i++) {
+for (let i = 0; i < 293; i++) {
     const row = [];
     for (let j = 1; j < 6; j++) {
         switch (j) {
