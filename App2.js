@@ -1,6 +1,5 @@
 const fs = require('fs');
 
-console.log('Start...');
 function generateYesValues() {
     return Math.floor(Math.random() * (100 - 80 + 1)) + 80;
 }
@@ -24,7 +23,7 @@ function generateVeryLongValues() {
 
 const data = [];
 // generating Impulsive Buyer values
-for (let i = 0; i < 266; i++) {
+for (let i = 0; i < 338; i++) {
     const row = [];
     for (let j = 1; j < 6; j++) {
         switch (j) {
@@ -50,7 +49,7 @@ for (let i = 0; i < 266; i++) {
     data.push(row);
 }
 // generating Browsing Customer values
-for (let i = 0; i < 331; i++) {
+for (let i = 0; i < 349; i++) {
     const row = [];
     for (let j = 1; j < 6; j++) {
         switch (j) {
@@ -76,35 +75,8 @@ for (let i = 0; i < 331; i++) {
     data.push(row);
 }
 
-// generating Loyal Customer values
-for (let i = 0; i < 179; i++) {
-    const row = [];
-    for (let j = 1; j < 6; j++) {
-        switch (j) {
-            case 1:
-                row.push(generateNoValues());
-                break;
-            case 2:
-                row.push(generateYesValues());
-                break;
-            case 3:
-                row.push(generateYesValues());
-                break;
-            case 4:
-                row.push(generateYesValues());
-                break;
-            case 5:
-                row.push(generateShortValues());
-                break;
-            default:
-                console.log('Loop Error - generating Loyal Customer values');
-        }
-    }
-    data.push(row);
-}
-
 // generating Bargain Hunter values
-for (let i = 0; i < 293; i++) {
+for (let i = 0; i < 341; i++) {
     const row = [];
     for (let j = 1; j < 6; j++) {
         switch (j) {
@@ -131,7 +103,7 @@ for (let i = 0; i < 293; i++) {
 }
 
 
-const filename = 'data.csv';
+const filename = 'data-app2.csv';
 
 const csvData = data.map(row => row.join(',')); // Convert data rows to CSV format
 

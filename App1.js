@@ -1,6 +1,5 @@
 const fs = require('fs');
 
-console.log('Start...');
 function generateYesValues() {
     return Math.floor(Math.random() * (100 - 80 + 1)) + 80;
 }
@@ -131,7 +130,7 @@ for (let i = 0; i < 293; i++) {
 }
 
 
-const filename = 'data.csv';
+const filename = 'data-app1.csv';
 
 const csvData = data.map(row => row.join(',')); // Convert data rows to CSV format
 
